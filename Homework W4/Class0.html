@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        body {
+            background-color: white;
+            color: violet;
+        }
+
+        p {
+            color: black;
+        }
+
+
+
+        div p {
+            color: green;
+        }
+
+        div p a {
+            color: red;
+        }
+
+        .Class-A {
+            color: blue;
+        }
+
+        .Class-B {
+            color: blueviolet;
+        }
+
+        div .Class-B {
+            color: yellow;
+        }
+
+        #Special {
+            color: black;
+        }
+
+        .ib {
+            display: inline-block;
+        }
+
+        .rt {
+            color: red;
+        }
+
+        .bt {
+            color: blue;
+        }
+
+        .text-css {
+            width: 70px;
+            height: fit-content;
+            margin: 5px;
+            border: 1px solid black;
+        }
+
+        .wb {
+            word-break: break-all;
+        }
+
+        .ovf {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .newfont1{
+            font-family: 'Odibee Sans', cursive;
+        }
+        .newfont2{
+            font-family: 'Smooch', cursive;
+        }
+        .font25{
+            font-size: 25px;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Smooch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+        NOTES GO HERE:
+        Basic CSS
+        3 ways - inline (style ="abcd");
+        internal h1{color:red;...};
+        external <link rel="stylesheet" href="styles.css">;
+        put in css folder > ./css/styles.css
+        Internal > External
+        CSS Selector
+        div p a > all <a> tags in <p> tags in <div> tags
+        CSS Class
+        .classname{properties}
+        <element class="classname">
+        can use multiple classes
+        bottom = higher prio
+        CSS ID
+        ID is unique, 
+
+        ID>Class>Selector>Style
+
+        CSS Bootstrap
+        take a look later
+        remember to refine hws
+
+        CSS Text Effect
+        p.test1 > test 1 class in <p> tag
+        overflow
+        whitespace
+        wordwrap
+        writing mode
+        
+        CSS Fonts
+        web fonts >from ggl
+        downloaded fonts >imported from local
+        default fonts >time new romans...
+        
+        how to import font from ggl - google font>font>styles><link>>use
+
+        
+
+    -->
+    <p>this is an example</p>
+    <div>
+        <p>this is another example, <a>yet another one</a></p>
+    </div>
+
+    <div>
+        <p>this is another example, <a class="Class-A">yet another one</a></p>
+    </div>
+
+    <div>
+        <p>this is another example, <a class="Class-A" id="Special">yet another one</a></p>
+    </div>
+
+    <p class="Class-B"> example for class selector</p>
+    <div>
+        <p class="Class-B">example for class selector</p>
+    </div>
+
+    <div class="ib rt">one two three</div>
+    <div class="rt ib">four five six</div>
+    <div class="bt ib">seven eight nine</div>
+    <div>
+        <p>ten <a href="">eleven</a></p>
+        <p class="rt">twelve</p>
+    </div>
+
+    <div class="text-css wb">One two three four five six seven height</div>
+
+    <p class="newfont1 font25">Good news, new font!</p>
+    <p class="newfont2 font25">Bad news, ugly font!</p>
+</body>
+
+</html>
