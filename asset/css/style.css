@@ -1,0 +1,13 @@
+/*TODO:BUILD CSS FILE*/
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.w-full{
+    width:100%;
+}
