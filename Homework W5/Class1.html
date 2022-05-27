@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        body{
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+        body {
             background-color: yellow;
             color: black;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+        }
+
+        table {
+            text-align: center;
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+            width: fit-content;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        .color1 {
+            background-color: lightgoldenrodyellow;
         }
     </style>
 </head>
+
 <body>
-    <table></table>
+    <div style="padding-top: 50px;">
+        <table>
+            <tr>
+                <th>COLUMN 1</th>
+                <th>COLUMN 2</th>
+                <th>COLUMN 3</th>
+                <th>COLUMN 4</th>
+            </tr>
+
+            <tr>
+                <td>Item #1</td>
+                <td>Item #2</td>
+                <td>Item #3</td>
+                <td>Item #4</td>
+            </tr>
+
+            <tr class="color1">
+                <td>Description</td>
+                <td>Description</td>
+                <td>Description</td>
+                <td>Description</td>
+            </tr>
+
+            <tr>
+                <td>Description</td>
+                <td>Description</td>
+                <td>Description</td>
+                <td>Description</td>
+            </tr>
+
+            <tr class="color1">
+                <td>Description</td>
+                <td>Description</td>
+                <td>Description</td>
+                <td>Description</td>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>
