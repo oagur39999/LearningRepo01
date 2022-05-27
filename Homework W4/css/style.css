@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100&display=swap');
+
+.f_playfair{
+    font-family:'Playfair Display', serif;
+}
+.f_roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+div{
+    background-color: black;
+    color: white;
+}

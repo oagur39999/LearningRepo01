@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+        body {
+            background-color: white;
+        }
+
+        .f_rbt {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            font-size: 60px;
+            color: blue;
+            font-weight: bold;
+            margin-bottom: -5px;
+        }
+
+        .body {
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .defdiv {
+            padding: 50px 30px;
+            border-right: 0px;
+            width: 50%;
+            height: 500px;
+        }
+
+        .halfborder {
+            border-left: 10px solid blue;
+            border-top: 10px solid blue;
+            border-bottom: 10px solid blue;
+            position: relative;
+        }
+
+        .halfborder::after {
+            content: "";
+            width: 50%;
+            height: 620px;
+            /* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: -10px;
+
+        }
+
+        .learnmore {
+            width: fit-content;
+            padding: 15px 30px;
+            color: white;
+            background-color: blue;
+            border: 1px grey solid;
+            box-shadow: 1 1 1 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding-top: 35px;">
+        <div class="defdiv halfborder">
+        </div>
+        <div class="defdiv" style="position: absolute; top:80px;">
+            <p class="f_rbt header">Be COOL</p>
+            <p class="f_rbt body">Do whatever you want, whenever you want. Your way.</p>
+            <div style="padding-top: 40px;"><button class="learnmore f_rbt">LEARN MORE</button></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
