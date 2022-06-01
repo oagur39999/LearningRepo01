@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+        body {
+            background-color: white;
+            color: navy;
+        }
+
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .opensans {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .abs {
+            position: absolute;
+        }
+
+        .rel {
+            position: relative;
+        }
+
+        .bg-top {
+            background-color: white;
+            width: 100%;
+            height: 1080px;
+            background-image:
+                linear-gradient(to bottom,
+                    navy,
+                    navy 15%,
+                    white 15%,
+                    white 100%);
+        }
+
+        .bg-mid {
+            background-color: orangered;
+            border-radius: 15px;
+            width: 170px;
+            height: 520px;
+        }
+
+        .image1 {
+            height: 350px;
+            border-radius: 15px;
+        }
+        
+        .textbox{
+            background-color: white;
+            color: navy;
+            border-radius: 15px;
+            height:300px;
+            width: 450px
+        }
+
+        .headtext{
+            font-size: 16px;
+            padding-top: 30px;
+        }
+        .title{
+            font-size:55px;
+            font-weight: bold;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-top rel">
+        <div class="bg-mid abs" style="top: 50px; left: 500px"></div>
+        <div class="abs" style="top: 110px; left:120px">
+            <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/de3a32d1afdb595687d72735/8ae73f64-3e5f-c818-6e56-109610e59476.jpg"
+                alt="image" class="image1">
+        <div class="textbox" style="padding: 0px 20px">
+            <p class="roboto headtext">MEAL IDEAS</p>
+            <p class="roboto title">How to Lose Weight Fast in 3 Simple Steps</p>
+            <p class="roboto" style="font-size: 16px; margin-top:-40px">Image from <a href="google.com" style="color: navy">Freepik</a></p>
+        </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
