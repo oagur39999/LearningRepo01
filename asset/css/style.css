@@ -11,3 +11,20 @@
 .w-full{
     width:100%;
 }
+
+.bgwhite{
+    background-color: white;
+}
+
+.txtblack{
+    color: black;
+}
+
+.ib{
+    display: inline-block;
+}
+
+body{
+    background-color: white;
+    color:black
+}

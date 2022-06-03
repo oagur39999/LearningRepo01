@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200&family=Roboto:wght@100&display=swap');
+
+        .oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .opensans {
+            font-family: 'Open sans', sans-serif;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        body {
+            background-color: white;
+            color: skyblue;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .bgwhite {
+            background-color: white;
+        }
+
+        .txtblack {
+            color: black;
+        }
+
+        .ib {
+            display: inline-block;
+        }
+
+        .container {
+            margin:0 auto;
+            border:1px solid grey;
+            height:50px;
+            border-radius: 15px;
+        }
+
+        .glow1 {
+            width: fit-content;
+            padding: 5px 20px;
+            border-radius: 10px;
+        }
+
+        .glow1-contact {
+            display: none;
+        }
+
+        .glow1:hover .glow1-contact {
+            display:block;
+            color:white;
+            background-color: orangered;
+            top:30px;
+            left:0px;
+            width:100%;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ib glow1 roboto text">Home</div>
+        <div class="ib glow1 roboto text">About</div>
+        <div class="ib glow1 roboto text">Clients
+            <div class="glow1-contact">A</div>
+            <div class="glow1-contact">B</div>
+            <div class="glow1-contact">C</div>
+        </div>
+        <div class="ib glow1 roboto text">Services</div>
+        <div class="ib glow1 roboto text">Contact</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <style>
+        button:hover {
+            background-color: green;
+            color: red;
+        }
+
+        input {
+            border-radius: 5px;
+        }
+
+        input:hover {
+            background-color: yellow;
+            color: blue;
+        }
+
+        input:focus {
+            background-color: blue;
+            color: yellow;
+            border-radius: 15px;
+        }
+
+        .input{
+            padding-left:50px;
+        }
+        
+        .icon{
+            padding-left: 15px;
+            top:0px;
+            left:0px;
+        }
+
+        .test:hover::before{
+            content: 'Fifty cents and ';
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+       CSS pseudo class & elements
+       todo: input in textbox
+
+        focus on active/focus/hover
+
+
+    -->
+    <button>Click me!</button>
+    <div class="relative">
+        <input class="input" type="text">
+        <div class="absolute icon">Input</div>
+    </div>
+    <p class="test">twenty pence.</p>
+
+</body>
+
+</html>
