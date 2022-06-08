@@ -39,108 +39,66 @@
         }
 
         .text {
-            box-sizing: border-box;
-            border: 2px #1A1E21 solid;
             font-size: 26px;
             font-weight: bold;
-            height: 42px;
-            width: fit-content;
-            margin: 0px auto;
+            margin: 20px;
+            text-align: center;
         }
-
-        .text2{
-            font-size:20px;
-
-        }
-
-        .container {
-            width: 100%;
-            padding-top: 25px;
-        }
-
-        .minmargin {
-            margin-right: -4px;
-    
-        }
-
-        .main {
-            width: 20%;
-        }
-
-        .spacerout {
-            width: 4%;
-        }
-
-        .spacerin {
-            width: calc(10%/3);
-        }
-
 
         .text:hover {
             border-bottom: 2px skyblue solid;
         }
 
+        .text2 {
+            font-size: 20px;
+        }
+
+        .container {
+            margin: 0px auto;
+        }
+
+        .minmargin {
+            margin-right: -4px;
+
+        }
+        
         .image {
             margin-top: 50px;
             border: 1px white solid;
         }
 
-        .imagein{
+        .imagein {
             width: 100%;
-            height: 200px;
+
+            object-fit: cover;
+            transition: transform.2s
         }
+
         .imagein:hover {
-            transform: scale(1.25);
+            transform: scale(1.1);
+            overflow: clip;
+        }
+
+        div {
+            border: 1px solid blue;
         }
     </style>
 </head>
 
 <body>
-    <!--
-        https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg
-        https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg
-        https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg
-        https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg
-    -->
-
     <div class="container">
-        <div class="spacerout ib minmargin"></div>
-        <div class="main ib minmargin">
-            <div class="text oswald">Home</div>
-            <div class="image">
-                <div class="imagein">
-                    <img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" alt=""></div>
-            </div>
-        </div>
-        <div class="spacerin ib minmargin"></div>
-        <div class="main ib minmargin">
-            <div class="text oswald">About</div>
-            <div class="image">
-                <div class="imagein">
-                    <img src="https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" alt=""></div>
-            </div>
-        </div>
-        <div class="spacerin ib minmargin"></div>
-        <div class="main ib minmargin">
-            <div class="text oswald">Service</div>
-            <div class="image">
-                <div class="imagein">
-                    <img src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg" alt=""></div>
-            </div>
-        </div>
-        <div class="spacerin ib minmargin"></div>
-        <div class="main ib minmargin">
-            <div class="text oswald">Team</div>
-            <div class="image">
-                <div class="imagein">
-                    <img src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg" alt=""></div>
-            </div>
-        </div>
-        <div class="spacerout ib minmargin"></div>
+        <div class="text ib">Home</div>
+        <div class="text ib">About</div>
+        <div class="text ib">Service</div>
+        <div class="text ib">Contact</div>
     </div>
-
-    <p class="text2 relative opensans" style="text-align: center; top: -250px">Sora gallery</p>
-
+    
+    <div class="container">
+        <div class="image ib"></div>
+        <div class="image ib"></div>
+        <div class="image ib"></div>
+        <div class="image ib"></div>
+    </div>
 </body>
 
 </html>

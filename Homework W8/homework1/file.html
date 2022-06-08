@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .opensans {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #282C34;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .abs {
+            position: absolute;
+        }
+
+        .rel {
+            position: relative;
+        }
+
+        .ib {
+            display: inline-block;
+        }
+
+        .div2 {
+            background-color: black;
+            opacity: 0;
+            width: 100%;
+            height: 80px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .title {
+            color: white;
+            font-weight: bold;
+        }
+
+        .titlehover {
+            color: white;
+            font-weight: bold;
+            margin: 10px;
+            margin-bottom: 5px;
+        }
+
+
+        .date {
+            color: white;
+            font-size: 8px;
+        }
+
+        .datehover {
+            color: white;
+            font-size: 8px;
+            margin-left: 10px;
+        }
+
+        .text3 {
+            color: white;
+            font-size: 9px;
+            margin-left: 10px;
+        }
+
+        .content {
+            margin: 0px auto;
+            width: fit-content;
+            padding-top: 300px;
+        }
+
+        .content-item {
+            margin: 5px;
+            width: 230px;
+            height: 180px;
+            overflow: hidden;
+
+        }
+
+        .content-item-image {
+            width: 230px;
+            height: 180px;
+            transition: all 0.5s ease-in-out;
+            opacity: 1;
+        }
+
+        .overlay2 {
+            background-color: black;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            opacity: 0;
+            transition: all 0.5s ease-in;
+        }
+
+        .content-item:hover .overlay2 {
+            opacity: 0.7;
+        }
+
+        .content-item:hover .content-item-image {
+            transform: scale(1.05);
+        }
+
+        .overlay1 {
+            margin-left: 10px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 55px;
+            opacity: 1;
+            transition: all 0.5s ease-in;
+        }
+
+        .content-item:hover .overlay1 {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="ib content-item rel">
+            <img class="content-item-image" alt=""
+                src='https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'>
+            <div class="overlay1 abs">
+                <div class="title"> Amazing First Title</div>
+                <div class="date"> Jan 29 2030</div>
+            </div>
+            <div class="overlay2 abs">
+                <div>
+                    <div class="titlehover">
+                        Amazing First Title</div>
+                    <div class="datehover">
+                        Jan 29 2030</div>
+                    <div class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ib content-item rel">
+            <img class="content-item-image" alt=""
+                src='https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'>
+            <div class="overlay1 abs">
+                <div class="title"> Amazing Second Title That Is Quite Long</div>
+                <div class="date">May 15 2034</div>
+            </div>
+            <div class="overlay2 abs">
+                <div>
+                    <div class="titlehover">
+                        Amazing Second Title that is Quite Long</div>
+                    <div class="datehover">
+                        May 15 2034</div>
+                    <div class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ib content-item rel">
+            <img class="content-item-image" alt=""
+                src='https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'>
+            <div class="overlay1 abs">
+                <div class="title"> Amazing Title</div>
+                <div class="date">Jun 26 2035</div>
+            </div>
+            <div class="overlay2 abs">
+                <div>
+                    <div class="titlehover">
+                        Amazing Title
+                    </div>
+                    <div class="datehover">
+                        Jun 26 2035
+                    </div>
+                    <div class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
