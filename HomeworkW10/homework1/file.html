@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: aliceblue;
+    }
+
+    .bsvg1 {
+        width: 35px;
+        height: 35px;
+        background-color: bisque;
+        margin-left: 220px;
+        border-radius: 3cm;
+        transition: 0.4s;
+    }
+
+    .bsvg2 {
+        width: 35px;
+        height: 35px;
+        background-color: bisque;
+        margin-left: 220px;
+        margin-top: 10px;
+        border-radius: 3cm;
+        transition: 0.4s;
+    }
+
+    .svg1 {
+        width: 20px;
+        height: 100%;
+        margin-left: 8px;
+        fill: blue
+    }
+
+    .bsvg1:hover {
+        background-color: white;
+    }
+
+    .bsvg1:hover .svg1 {
+        fill: green
+    }
+
+    .bsvg2:hover .svg1 {
+        fill: green
+    }
+
+    .bsvg2:hover {
+        background-color: white;
+    }
+
+    .div {
+        color: white;
+        font-weight: bold;
+        background-color: black;
+        width: 110px;
+        height: 30px;
+        margin-left: 900px;
+        text-align: center;
+        transition: 0.5s;
+
+    }
+
+    .div:hover {
+        width: 130px;
+        height: 40px;
+
+    }
+</style>
+
+<body>
+    <div style="width:100%;height: 500px;">
+        <div
+            style="background-color:bisque;border-radius: 0.4cm ; margin:auto;margin-top: 50px;width: 300px;height: 400px;">
+            <div class="bsvg1">
+                <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+
+            </div>
+            <div class="bsvg2">
+                <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                    fill="blue" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </div>
+            <div class="bsvg2">
+                <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                    class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z" />
+                </svg>
+            </div>
+            <div class="bsvg2">
+                <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                    class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+            </div>
+            <div style="width: 200px">
+                <img style="border-radius:0.3cm ;margin-top: -150px;margin-left: -20px;box-shadow:  0px 10px 5px;width: 100%;height: 100%   ;"
+                    src="https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/1.jpg">
+            </div>
+            <div style="margin:20px 20px ;font-weight: bold;font-size: 15px;">
+                Norm Ender
+            </div>
+            <div style="color: darkgray;margin-left: 20px;font-size: 15px;">
+                Mekanin Sahibi
+            </div>
+            <div style="color: darkgray;margin-left: 240px;font-size: 15px;">
+                03:09
+            </div>
+            <div
+                style="width:85%;height: 4px ;margin-top: 10px;border-radius: 1cm;background-color: aliceblue;margin-left: 20px;">
+            </div>
+            <div style="color: darkgray;margin-left: 20px;">
+                00:00
+            </div>
+        </div>
+        <div class="div">
+            See on Gitbhub
+        </div>
+    </div>
+</body>
+
+</html>

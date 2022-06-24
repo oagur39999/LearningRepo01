@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            color: yellow;
+            margin: -4px
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+        }
+
+        .container {
+            color: white;
+            background-color: green;
+            height: 300px;
+            width: 400px;
+            padding: 20px;
+        }
+
+        .button1 {
+            background-color: darkgreen;
+            border: 1px solid darkgreen;
+            width: fit-content;
+            height: 34px;
+            padding: 0px 20px;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    ONE TWO THREE FOUR FIVE
+    <div class="overlay">
+        <div class="container">
+            <p style="font-size: 26px; font-weight: bold;">You win!</p>
+            <p>You win a free car! Pick your model!</p>
+            <div class="btn-container">
+                <button class="button1">Toyota</button>
+                <button class="button1">Hyundai</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

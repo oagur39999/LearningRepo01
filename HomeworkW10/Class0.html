@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            padding: 0px 20px
+        }
+
+        .container {
+            background-color: white;
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: grey;
+        }
+
+        .item-left {
+            width: fit-content;
+            padding: 30px;
+        }
+
+        .item-right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quantity {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>Your cart</div>
+        <div class="item">
+            <div class="item-left">
+                <div class="circle"></div>
+            </div>
+            <div class="item-right">
+                <div>Nike1</div>
+                <div>36</div>
+                <div>$108</div>
+                <div class="quantity">
+                    <div>-</div>
+                    <div>1</div>
+                    <div>+</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-left">
+                <div class="circle"></div>
+            </div>
+            <div class="item-right">
+                <div>Nike2</div>
+                <div></div>
+                <div>$148</div>
+                <div class="quantity">
+                    <div>-</div>
+                    <div>1</div>
+                    <div>+</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-left">
+                <div class="circle"></div>
+            </div>
+            <div class="item-right">
+                <div>Nike3</div>
+                <div>43</div>
+                <div>$198</div>
+                <div class="quantity">
+                    <div>-</div>
+                    <div>1</div>
+                    <div>+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

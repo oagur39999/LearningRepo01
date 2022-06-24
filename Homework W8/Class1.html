@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&family=Sacramento&display=swap');
+
+        .sacramento {
+            font-family: 'Sacramento', cursive;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 400px 250px 250px;
+            grid-template-rows: 400px;
+        }
+
+        .text {
+            color: black;
+            font-size: 72px;
+            text-align: center;
+        }
+
+        .item1 {
+            height: 400px;
+            width: 400px;
+        }
+
+        .item2 {
+            height: 200px;
+            width: 200px;
+        }
+        .item2-image{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        .item3 {
+            height: 200px;
+            width: 400px;
+        }
+        .item3-image{
+            height: 200px;
+            width: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item1">
+            <p class="sacramento text">Travel and see the world</p>
+        </div>
+        <div class="item2"><img class="item2-image"
+                src="https://images.pexels.com/photos/443416/pexels-photo-443416.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                alt=""></div>
+        <div class="item2"><img class="item2-image"
+                src="https://images.pexels.com/photos/542411/pexels-photo-542411.png?auto=compress&cs=tinysrgb&h=750&w=1260"
+                alt=""></div>
+        <div class="item3"><img class="item3-image"
+                src="https://images.pexels.com/photos/614494/pexels-photo-614494.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                alt=""></div>
+    </div>
+</body>
+
+</html>

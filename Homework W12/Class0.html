@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+
+        body {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        @media only screen and (min-width:990px) {
+            .item2 {
+                display: flex!important;
+                gap: 10px;
+                padding-top: 25px;
+            }
+            .svgcontent{
+                display: none;
+            }
+        }
+
+        .item {
+            width: 100%;
+            height: 80px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item2 {
+            display: none;
+        }
+
+        .button {
+            border: 1px solid black;
+            border-radius: 15px;
+            height: 30px;
+            width: fit-content;
+            background-color: lightgray;
+            margin-top: 22px;
+            margin-left: calc(100% - 380px);
+            padding: 0px 15px;
+        }
+
+        .anek {
+            font-family: 'Anek Latin', sans-serif;
+        }
+
+        .title {
+            display: flex;
+            font-weight: bold;
+            font-size: 24px;
+            padding-left: 20px;
+        }
+
+        .svgcontent {
+            display: flex;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item">
+        <p class="title anek">PaperTiger™</p>
+        <div class="anek item2">Work</div>
+        <div class="anek item2">About</div>
+        <div class="anek item2">Career</div>
+
+        <button class="button anek">CONTACT US</button>
+        <div class="svgcontent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/> </svg>
+        </div>
+    </div>
+</body>
+
+</html>
