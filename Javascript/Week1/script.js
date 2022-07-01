@@ -22,11 +22,18 @@ function Calc() {
     alert("A+B= " + (parseFloat(A) + parseFloat(B)) + "\nA-B= " + (parseFloat(A) - parseFloat(B)) + "\nA/B= " + (parseFloat(A) / parseFloat(B)) + "\nA*B= " + (parseFloat(A) * parseFloat(B)));
 }
 
-function Convert(){
+function Convert() {
     var C = document.getElementById('c').value;
     var F = document.getElementById('f').value;
-    let CtF= C*9/5+32;
-    let FtC= F-32*5/9;
+    let CtF = C * 9 / 5 + 32;
+    let FtC = F - 32 * 5 / 9;
+    alert(C + "\u00B0C is " + parseFloat(CtF) + "\u00B0F\n" + F + "\u00B0F is " + parseFloat(FtC) + "\u00B0C");
+}
 
-    alert(C+"\u00B0C is " + parseFloat(CtF) +"\u00B0F\n" + F + "\u00B0F is " + parseFloat(FtC) + "\u00B0C");
+function RandomConvert() {
+    var C = Math.floor(Math.random() * 101);
+    var F = Math.floor(Math.random() * 101);
+    let CtF = C * 9 / 5 + 32;
+    let FtC = F - 32 * 5 / 9;
+    alert(C + "\u00B0C is " + parseFloat(CtF) + "\u00B0F\n" + F + "\u00B0F is " + parseFloat(FtC) + "\u00B0C");
 }
