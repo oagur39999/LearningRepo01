@@ -17,9 +17,14 @@ function Random() {
 }
 
 function Calc() {
-    var A = document.getElementById('a').value;
-    var B = document.getElementById('b').value;
-    alert("A+B= " + (parseFloat(A) + parseFloat(B)) + "\nA-B= " + (parseFloat(A) - parseFloat(B)) + "\nA/B= " + (parseFloat(A) / parseFloat(B)) + "\nA*B= " + (parseFloat(A) * parseFloat(B)));
+    var A = parseFloat(document.getElementById('a').value);
+    var B = parseFloat(document.getElementById('b').value);
+    let a = A+B;
+    let b = A-B;
+    let c = A*B;
+    let d = A/B;
+    
+    alert("A+B= " + a + "\nA-B= " + b + "\nA/B= " + c + "\nA*B= " + d);
 }
 
 function Convert() {
