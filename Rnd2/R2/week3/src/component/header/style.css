@@ -1,0 +1,19 @@
+.header{
+    width:100%;
+    background-color: black;
+    padding-top:20px;
+    padding-bottom:20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left{
+    font-weight: bold;
+    color:#61dafb;
+    font-size: 25px;
+}
+
+.header-center{
+    color:white
+}
