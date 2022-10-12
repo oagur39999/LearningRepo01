@@ -1,15 +1,16 @@
 const express = require('express'),
-    app = express(),
-    http = require('http'),
-    socketIO = require('socket.io')
-let server, io;
+    app = express()
+const cors = require('cors');
 
-server = http.Server(app);
-server.listen(5000, () => {
-    console.log("HOST is open in local host 5000")
+app.use(cors());
+
+const server = require("http").Server(app);
+const io = require("socket.io")(server, {
+    cors: {
+        origin: '*',
+    }
 });
 
-io = socketIO(server);
 
 io.on('connection', function (socket) {
     socket.emit('greeting-from-server', {
@@ -18,4 +19,9 @@ io.on('connection', function (socket) {
     socket.on('greeting-from-client', function (message) {
         console.log(message);
     });
+});
+
+
+server.listen(5000, () => {
+    console.log("HOST is open in local host 5000")
 });
