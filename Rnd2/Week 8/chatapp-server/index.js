@@ -1,10 +1,16 @@
-const express = require('express'),
-    app = express()
+const express = require('express')
 const cors = require('cors');
+const app = express()
+
 
 app.use(cors());
+app.get("/",(req,res)=>{
+    res.send("Hello bạn đang truy cập vào api /")
+})
 
 const server = require("http").Server(app);
+
+
 const io = require("socket.io")(server, {
     cors: {
         origin: '*',
