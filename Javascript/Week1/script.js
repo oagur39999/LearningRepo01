@@ -3,6 +3,7 @@ console.log("FILE IS WORKING.");
 
 function Funct1() {
     console.log("This function has been called");
+    alert('Look at the console.');
 }
 
 function Funct2() {
@@ -19,11 +20,11 @@ function Random() {
 function Calc() {
     var A = parseFloat(document.getElementById('a').value);
     var B = parseFloat(document.getElementById('b').value);
-    let a = A+B;
-    let b = A-B;
-    let c = A*B;
-    let d = A/B;
-    
+    let a = A + B;
+    let b = A - B;
+    let c = A * B;
+    let d = A / B;
+
     alert("A+B= " + a + "\nA-B= " + b + "\nA/B= " + c + "\nA*B= " + d);
 }
 

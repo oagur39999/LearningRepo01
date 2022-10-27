@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+
+    svg {
+        vertical-align: middle;
+    }
+
+    .container0 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: green;
+        color: white;
+        width: fit-content;
+        flex: 1;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: white;
+        flex: 2;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .flex1 {
+        flex: 1;
+    }
+
+    .flex2 {
+        flex: 2;
+    }
+
+    .container1>div {
+        padding: 5px 20px;
+    }
+
+    .container2>div {
+        padding: 5px 20px;
+    }
+
+
+    .imgProfile {
+        object-fit: cover;
+        border-radius: 50%;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 30px;
+    }
+
+    .text0 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .text1 {
+        font-size: 30px;
+    }
+
+    .text2 {
+        font-size: 20px;
+    }
+
+    .text3 {
+        font-size: 14px;
+    }
+
+    .text4 {
+        font-size: 24px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .hr1 {
+        width: 95%;
+        height: 3px;
+        background-color: green;
+        border: none;
+    }
+
+    .hr2 {
+        width: 93%;
+        height: 2px;
+        background-color: green;
+        border: none;
+    }
+</style>
+
+<body>
+    <div class="container0">
+        <div class="container1">
+            <img src="https://th.bing.com/th/id/OIP.YwA6xGkFItqFcdN8eHm-aAHaHZ?pid=ImgDet&rs=1" alt="(Cat)"
+                class="imgProfile">
+
+            <div class="text1 bold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+                Thông tin cá nhân</div>
+
+            <div class="text2 bold">Địa chỉ</div>
+            <div class="text">Số 50 Lạch Tray, Lê Chân, Ngô Quyền</div>
+            <div class="text2 bold">Điện thoại</div>
+            <div class="text">012-345-6789</div>
+            <div class="text2 bold">Email</div>
+            <div class="text">son84703@st.vimaru.edu.vn</div>
+            <div class="text2 bold">Ngày sinh</div>
+            <div class="text">15/12/2001</div>
+
+            <div class="text1 bold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white"
+                    class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                    <path
+                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z" />
+                </svg>
+                Các kỹ năng</div>
+
+            <div>
+                <p class="text2 bold">Tin học văn phòng:</p> Chứng chỉ MOS, CCNA, CSSP...
+            </div>
+            <div>
+                <p class="text2 bold">Tiếng Anh:</p> Chứng chỉ IELTS 7.5
+            </div>
+        </div>
+        <div class="container2">
+            <div class="text0 green">Tạ Duy Tâm Sơn</div><br>
+            <div class="text4 black">Chuyên viên bảo dưỡng thiết bị số</div>
+            <hr class="hr1"><br>
+
+            <div class="text1 green bold style=" padding-top:30px"">
+                <svg style="color: rgb(0, 128, 0);" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                    viewBox="0 0 512 512">
+                    <title>ionicons-v5-o</title>
+                    <path
+                        d="M321.89,171.42C233,114,141,155.22,56,65.22c-19.8-21-8.3,235.5,98.1,332.7C231.89,468.92,352,461,392.5,392S410.78,228.83,321.89,171.42Z"
+                        style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+                        fill="#008000"></path>
+                    <path d="M173,253c86,81,175,129,292,147"
+                        style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+                        fill="#008000"></path>
+                </svg>
+                Mục tiêu nghề nghiệp</div>
+            <hr class="hr2">
+            <div class="text4 black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+            <div class="text1 green bold" style="padding-top:30px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="green" class="bi bi-box"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                </svg>
+                Kinh nghiệm làm việc</div>
+            <hr class="hr2">
+            <div class="container3">
+                <div class="text4 black bold flex1">2020-2022</div>
+                <div class="text4 black flex2">Lập trình frontend,backend cho các dự án web. Freelance.</div>
+            </div>
+            <div class="container3">
+                <div class="text4 black bold flex1">2021-2022</div>
+                <div class="text4 black flex2">Thực tập tại công ty TNHH AXBC.</div>
+            </div>
+
+
+            <div class="text1 green bold" style="padding-top:50px"><svg xmlns="http://www.w3.org/2000/svg" width="64"
+                    height="64" fill="green" class="bi bi-book" viewBox="0 0 16 16">
+                    <path
+                        d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                </svg>
+                Học vấn</div>
+            <hr class="hr2">
+            <div class="container3">
+                <div class="text4 black bold flex1">2019-2022</div>
+                <div class="text4 black flex2">Tốt nghiệp ngành Công Nghệ Thông Tin tại Trường Đại Học Hàng Hải Việt
+                    Nam.</div>
+            </div>
+            <div class="container3">
+                <div class="text4 black bold flex1">2019-2023</div>
+                <div class="text4 black flex2">Tốt nghiệp ngành Ngôn Ngữ Anh tại Trường Đại Học Hàng Hải Việt Nam.</div>
+            </div>
+
+            <div class="text1 green bold" style="padding-top:50px"><svg viewBox="0 0 21 21" width="64" height="64"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m8 13.5172414c4.418278 0 8-3.2845583 8-7.0172414 0-3.73268314-3.581722-6.5-8-6.5s-8 3.02593755-8 6.75862069c0 1.45741942.5460328 2.80709561 1.47469581 3.91098161l-.97469581 4.5803977 3.91607376-2.4472652c1.07810761.4571647 2.29544433.7145066 3.58392624.7145066z"
+                        fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round"
+                        transform="translate(3 3)" />
+                </svg>
+                Hoạt động</div>
+            <hr class="hr2">
+            <div class="container3">
+                <div class="text4 black bold flex1">2021</div>
+                <div class="text4 black flex2">Tham gia hoạt động tiếp sức mùa thi và mùa hè xanh.</div>
+            </div>
+            <div class="container3">
+                <div class="text4 black bold flex1">2022</div>
+                <div class="text4 black flex2">Tham gia hoạt động tiếp sức mùa thi.</div>
+            </div>
+
+            <div class="text1 green bold" style="padding-top:50px"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-ball-volleyball" width="64" height="64" viewBox="0 0 24 24"
+                    stroke-width="1" stroke="green" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 12a8 8 0 0 0 8 4m-12.5 -2.5a12 12 0 0 0 8.5 6.5" />
+                    <path d="M12 12a8 8 0 0 0 8 4m-12.5 -2.5a12 12 0 0 0 8.5 6.5" transform="rotate(120 12 12)" />
+                    <path d="M12 12a8 8 0 0 0 8 4m-12.5 -2.5a12 12 0 0 0 8.5 6.5" transform="rotate(240 12 12)" />
+                </svg>
+                Sở thích</div>
+            <hr class="hr2">
+            <div class="text2 bold black">Lập trình ứng dụng di động.</div>
+            <div class="text2 bold black">Lập trình ứng dụng web.</div>
+            <div class="text2 bold black">Dịch thuật.</div>
+            <div class="text2 bold black">Chơi game chiến thuật.</div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
