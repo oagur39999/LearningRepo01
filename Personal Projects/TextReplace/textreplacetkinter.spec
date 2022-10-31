@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['textreplacetkinter.py'],
+    ['TextReplaceTkinter.pyw'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='textreplacetkinter',
+    name='TextReplaceTkinter',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
