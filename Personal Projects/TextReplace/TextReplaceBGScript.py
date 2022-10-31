@@ -3,8 +3,8 @@ from unittest import result
 import pyperclip
 from tkinter import *
 from tkinter import ttk
-
-
+from pynput import keyboard as pykb
+import keyboard
 
 
 def replaceText():
@@ -13,6 +13,7 @@ def replaceText():
 
     searchList = ["、", "。", "「", "」", "？", "！", "――", "―", "…………",
                   "……", "…", "◇", "◆", "【", "】", "『", "』", "・", "‥"]
+
 
     replaceList = [",", ".", "\"", "\"", "?", "!", "-", "-",
                    "...", "...", "...", "*", "*", "[", "]", "[", "]", "", ".."]
@@ -28,15 +29,10 @@ def replaceText():
     pyperclip.copy(resultText)
 
 
+def copyListen():
+    print('ctrl pressed')
+    keyboard.on_release_key('c', lambda e: replaceText())
 
+keyboard.on_press_key('ctrl', lambda e: copyListen())
 
-root = Tk()
-root.title("Text Replacer")
-root.geometry("200x50")
-a = ttk.Button(root, text="Replace!", command=replaceText)
-a.place(relx=0.5, rely=0.5, anchor=CENTER)
-a.focus()
-root.bind("Return", replaceText)
-root.attributes('-topmost', True)
-root.resizable(0,0)
-root.mainloop()
+keyboard.wait()
