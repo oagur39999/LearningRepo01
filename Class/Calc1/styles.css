@@ -1,0 +1,51 @@
+.body {
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Math>div {
+    display: block;
+}
+
+.Form {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.Form>input {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.Math {
+    font-size: 40px;
+    padding: 5px;
+}
+
+.CN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+button {
+    font-size: 30px;
+}
+
+button {
+    margin: 10px;
+}
+
+.Content {
+    display: flex;
+}

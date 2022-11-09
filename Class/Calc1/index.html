@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="Content">
+            <div class="Form">
+                <label >Số 1:</label>
+                <input type="number" id="1"><br>
+                <label >Số 2:</label>
+                <input type="number" id="2"><br>
+                <label  style="color: blue">Kết quả :</label>
+                <input type="number" id="res" readonly="true"><br>
+            </div>
+            <div class="Math">
+                <label>Phép tính</label><br>
+                <input type="radio" id="sum" name="mode" value="Cộng" >
+                <label for="sum">Cộng</label><br>
+                <input type="radio" id="sub" name="mode" value="Trừ">
+                <label for="sub">Trừ</label><br>
+                <input type="radio" id="mul" name="mode" value="Nhân">
+                <label for="mul">Nhân</label><br>
+                <input type="radio" id="div" name="mode" value="Chia">
+                <label for="div">Chia</label>
+            </div>
+
+        </div>
+
+        <button onclick="math()">Kết quả</button>
+        <button onclick="del()">Xóa</button>
+        <button onclick="close()">Thoát</button>
+
+
+    </div>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
